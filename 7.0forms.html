@@ -1,0 +1,101 @@
+//FORM STRUCTURE
+<html>
+<body>
+<form action="http://www.example.com/subscribe.php"method="get">
+    <p>This is where the form controls will appear.</p>
+    //action,method,id
+</form>
+//TEXT INPUT
+<form>
+    <p>Username:<input type="text" name="Username" size="15" maxlength="30" />
+    </p>
+    <p>Password:<input type="text" name="Password" size="15" maxlength="30" />
+    </p>
+    <p>Text Area:<textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
+    </p>
+</form>
+//RADIO BUTTON
+<form>
+    <p>Please select your favorite genre:<br />
+    <input type="radio" name="genre" value="rock" checked="checked" />Rock
+    <input type="radio" name="genre" value="pop" />Pop
+    <input type="radio" name="genre" value="Jazz" />Jazz
+    </p>
+</form>
+<form action="http://www.example.com/profile.php">
+    <p>Please select your favorite music service(s):
+    <br />
+    <input type="checkbox" name="service" value="itunes" checked="checked" />iTunes
+    <input type="checkbox" name="service" value="lastfm" />Last.fm
+    <input type="checkbox" name="service" value="spotify"  />Spotify
+    </p>
+</form>
+//DROP DOWN LIST BOX
+<form>
+    <p>
+        <select name="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio" selected="selected" >Radio</option>
+            <option value="Computer">Computer</option>
+        </select>
+    </p>
+</form>
+//MULTIPLE SELECT BOX
+<form>
+    <p>
+        <select name="devices" multiple="multiple" >
+            <option value="ipod" selected="selected" >iPod</option>
+            <option value="radio" selected="selected" >Radio</option>
+            <option value="Computer">Computer</option>
+        </select>
+    </p>
+</form>
+//FILE INPUT BOX & IMAGE BUTTON
+<form>
+    <p>
+        <input type="file" name="user">
+        <input type="submit" value="Upload">
+        <input type="image" src="1.jpeg" width="100" />
+    </p>
+</form>
+//BUTTON & HIDDEN CONTROLS
+<form>
+    <button>
+        <input type="hidden" name="bookmark" value="Add" />
+    </button>
+</form>
+//LABELLING FROM CONTROLS
+<label>
+    Age:<input type="text" name="Age" />
+</label>
+Gender:<input id="Male" type="radio" name="gender" value="M" />
+<label for="Male">Male</label>
+<input id="Female" type="radio" name="gender" value="f" />
+<label for="Female">Female</label>
+//GROUPING FORM ELEMENTS
+<fieldset>
+    <legend>Contact details</legend>
+    <label>
+        Email:<input type="text" name="Email" /><br />
+        Mobile:<input type="text" name="Email" /><br />
+        Telephone:<input type="text" name="Email" />
+    </label>
+</fieldset>
+//FORM VALIDATION
+<form action="http://www.example.com/login/" method="post">
+    <label for="Username" >Username:</label>
+    <input type="text" id="Username" required="required"/>
+    <label for="Password">Password:</label>
+    <input type="password" id="Password" required="required" />
+<input type="submit" value="Submit"/>
+</form>
+IN the same way we can add date,email and url
+//SEARCH INPUT
+<form action="http://www.google.com">
+    <p>
+        Search:<input type="search" name="search" placeholder="Enter keyword" />
+    <input type="submit" value="search" />
+    </p>
+</form>
+</body>
+</html>
